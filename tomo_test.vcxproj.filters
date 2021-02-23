@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков\FProjection">
+      <UniqueIdentifier>{da6ee026-e0df-4b5c-83e7-b203294338f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\assets">
+      <UniqueIdentifier>{9afd2971-3c8a-41fd-872c-89f08e9d5f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\FProjection">
+      <UniqueIdentifier>{b8f77d35-b037-49e7-bfb4-155e76fd8e34}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="projection_test.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Line.cpp">
+      <Filter>Исходные файлы\FProjection</Filter>
+    </ClCompile>
+    <ClCompile Include="MyImg.cpp">
+      <Filter>Исходные файлы\FProjection</Filter>
+    </ClCompile>
+    <ClCompile Include="Projector.cpp">
+      <Filter>Исходные файлы\FProjection</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CImg.h">
+      <Filter>Файлы заголовков\FProjection</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>Файлы заголовков\FProjection</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
+      <Filter>Файлы заголовков\FProjection</Filter>
+    </ClInclude>
+    <ClInclude Include="MyImg.h">
+      <Filter>Файлы заголовков\FProjection</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Файлы заголовков\FProjection</Filter>
+    </ClInclude>
+    <ClInclude Include="Projector.hpp">
+      <Filter>Файлы заголовков\FProjection</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="out_residual_normed.bmp">
+      <Filter>Файлы ресурсов\assets</Filter>
+    </Image>
+    <Image Include="out_sinogram.bmp">
+      <Filter>Файлы ресурсов\assets</Filter>
+    </Image>
+    <Image Include="phantom.bmp">
+      <Filter>Файлы ресурсов\assets</Filter>
+    </Image>
+    <Image Include="sinogram.bmp">
+      <Filter>Файлы ресурсов\assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="sinogram.txt">
+      <Filter>Файлы ресурсов\assets</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="for_task.py">
+      <Filter>Файлы ресурсов\assets</Filter>
+    </None>
+  </ItemGroup>
+</Project>
