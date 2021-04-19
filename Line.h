@@ -5,10 +5,12 @@
 class Line {
 public:
 	bool vert = false, hor = false;
-	float dist = 0.0f, angle = 0.0f, k = 0.0f, b = 0.0f;
-	Line(const float& x1, const float& y1, const float& x2, const float& y2);
-	float value(const float& x) const;
-	float coor(const float& y) const;
+	double angle = 0.0, k = 0.0, b = 0.0;
+	Line(double x1, double y1, double x2, double y2);
+	Line(double x, double y, double angle);
+	Line() {};
+	double value(double x) const;
+	double coor(double y) const;
 };
 
 #endif

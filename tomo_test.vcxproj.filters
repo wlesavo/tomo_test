@@ -56,6 +56,12 @@
     <ClInclude Include="Projector.hpp">
       <Filter>Файлы заголовков\FProjection</Filter>
     </ClInclude>
+    <ClInclude Include="Geometries.h">
+      <Filter>Файлы заголовков\FProjection</Filter>
+    </ClInclude>
+    <ClInclude Include="SumAlgo.h">
+      <Filter>Файлы заголовков\FProjection</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="out_residual_normed.bmp">
@@ -64,15 +70,12 @@
     <Image Include="out_sinogram.bmp">
       <Filter>Файлы ресурсов\assets</Filter>
     </Image>
-    <Image Include="phantom.bmp">
-      <Filter>Файлы ресурсов\assets</Filter>
-    </Image>
-    <Image Include="sinogram.bmp">
+    <Image Include="out_residual_float.bmp">
       <Filter>Файлы ресурсов\assets</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="sinogram.txt">
+    <Text Include="angles.txt">
       <Filter>Файлы ресурсов\assets</Filter>
     </Text>
   </ItemGroup>

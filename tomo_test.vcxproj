@@ -148,20 +148,21 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CImg.h" />
+    <ClInclude Include="Geometries.h" />
     <ClInclude Include="Geometry.h" />
     <ClInclude Include="Line.h" />
     <ClInclude Include="MyImg.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="Projector.hpp" />
+    <ClInclude Include="SumAlgo.h" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="out_residual_float.bmp" />
     <Image Include="out_residual_normed.bmp" />
     <Image Include="out_sinogram.bmp" />
-    <Image Include="phantom.bmp" />
-    <Image Include="sinogram.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="sinogram.txt" />
+    <Text Include="angles.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="for_task.py" />

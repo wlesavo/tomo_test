@@ -1,26 +1,45 @@
 #include "Line.h"
 #include <cmath>
 
-Line::Line(const float& x1, const float& y1, const float& x2, const float& y2) {
+Line::Line(double x1, double y1, double x2, double y2) {
 	angle = std::atan2(y2 - y1, x2 - x1);
-	if (std::abs(std::cos(angle)) < 1e-9f) {
+	if (std::abs(std::cos(angle)) < 1e-10) {
 		vert = true;
-		dist = x1;
+		b = x1;
 	}
-	else if (std::abs(std::cos(angle)) > 1.0f - 1e-9f) {
+	else if (std::abs(std::sin(angle)) < 1e-10) {
 		hor = true;
-		dist = y1;
+		k = 0;
+		b = y1;
+	}
+	else {
+		k = (y2 - y1) / (x2 - x1);// std::tan(angle);
+		b = y2 - k * x2;
+	}
+}
+
+Line::Line(double x, double y, double i_angle) {
+	angle = i_angle;
+	if (std::abs(std::cos(angle)) < 1e-10) {
+		vert = true;
+		b = x;
+	}
+	else if (std::abs(std::sin(angle)) < 1e-10) {
+		hor = true;
+		k = 0;
+		b = y;
 	}
 	else {
 		k = std::tan(angle);
-		b = y1 - k * x1;
+		b = y - k * x;
 	}
 }
 
-float Line::value(const float& x) const {
+double Line::value(double x) const {
 	return x * k + b;
 }
 
-float Line::coor(const float& y) const {
-	return ((y - b) / k);
+double Line::coor(double y) const {
+	double rev = 1 / k;
+	return ((y - b) * rev);
 };
